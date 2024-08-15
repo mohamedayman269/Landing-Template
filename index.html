@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temp1</title>
-    <link rel="stylesheet" href="css/main.css">
+    
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +18,12 @@
         <div class="container">
             <h1>GO</h1>
             <div class="links">
-                <span class="icon">
+                <span class="icon" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-                <ul>
+                <ul id="menu">
                     <li><a href="#services">Serviecs</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
@@ -188,5 +189,15 @@
         &copy; 2024 <span>LOGO</span> All Right Reserved
     </div>
     <!-- End Footer -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display == "block") {
+                menu.style.display = "none" ;
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -138,9 +138,9 @@ header .container .links ul {
     z-index: 1;
 }
 
-header .container .links:hover ul {
+/* header .container .links:hover ul {
     display: block;
-}
+} */
 
 header .container .links ul::before {
     content: "";
